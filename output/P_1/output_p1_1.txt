@@ -1,0 +1,1 @@
+sub_no block trialno introbeats n_targetbeats IOI trialtype mean_threshold sd rhythmic_flag DU1 DU2 DU3 DU4 DU5 DU6 DU7 DU8 A1 A2 A3 A4 A5 A6 A7 A8 IOI1-2 IOI2-3 IOI3-4 IOI4-5 IOI5-6 IOI6-7 IOI7-8 r_key choice correct rt

@@ -1,0 +1,59 @@
+PTB-INFO: Connection to Psychtoolbox kernel support driver instance #0 (Revision 0) established.
+PTB-INFO: Disconnecting from kernel driver instance #0 for detected Intel GPU for safety reasons. setenv('PSYCH_ALLOW_DANGEROUS', '1') to override.
+PTB-INFO: Running on OSX 10.9+ - Enabling protection against AppNap and other evils.
+PTB-INFO: Retina display. Enabling panel fitter for scaled Retina compatibility mode.
+
+
+PTB-INFO: This is Psychtoolbox-3 for Apple OS X, under Matlab 64-Bit (Version 3.0.12 - Build date: Dec 19 2014).
+PTB-INFO: Support status on this operating system release: OSX 10.10 Supported.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: Always using Cocoa for fullscreen windows to work around graphics driver bugs in OSX.
+PTB-INFO: Presentation timing precision is not yet known for this configuration on most machines. Check your results.
+
+
+PTB-INFO: OpenGL-Renderer is Intel Inc. :: Intel Iris OpenGL Engine :: 2.1 INTEL-10.6.33
+PTB-INFO: Renderer has 1536 MB of VRAM and a maximum 1536 MB of texture memory.
+PTB-INFO: VBL startline = 1600 , VBL Endline = -1
+PTB-INFO: Beamposition queries unsupported or defective on this system. Using basic timestamping as fallback: Timestamps returned by Screen('Flip') will be less robust and accurate.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.639528 ms [60.097859 Hz]. (60 valid samples taken, stddev=2.178778 ms.)
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! ----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 33793 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Enabling panel fitter. Providing virtual framebuffer of 1280 x 800 pixels size.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+{Error using <a href="matlab:helpUtils.errorDocCallback('imread', '/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m', 350)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m',350,0)">line 350</a>)
+File "stimuli/ex_2_2_localisation/images/pic_1.jpg" does not exist.
+
+Error in <a href="matlab:helpUtils.errorDocCallback('imread', '/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m', 350)" style="font-weight:bold">imread</a> (<a href="matlab: opentoline('/Applications/MATLAB_R2013a.app/toolbox/matlab/imagesci/imread.m',350,0)">line 350</a>)
+            error(message('MATLAB:imagesci:imread:fileDoesNotExist',
+            filename));
+
+Error in <a href="matlab:helpUtils.errorDocCallback('ex_2_2_localisation_mixed_ver1_1', '/Users/dcg/Code/Experimental/Matlab/programs/3_localisation/expt_1/ex_2_2_localisation_mixed_ver1_1.m', 99)" style="font-weight:bold">ex_2_2_localisation_mixed_ver1_1</a> (<a href="matlab: opentoline('/Users/dcg/Code/Experimental/Matlab/programs/3_localisation/expt_1/ex_2_2_localisation_mixed_ver1_1.m',99,0)">line 99</a>)
+        imdata=imread(char(img));
+} 
+clear Screen
+
+
+WARNING: This session of your experiment was run by you with the setting Screen('Preference', 'SkipSyncTests', 1).
+WARNING: This means that some internal self-tests and calibrations were skipped. Your stimulus presentation timing
+WARNING: may have been wrong. This is fine for development and debugging of your experiment, but for running the real
+WARNING: study, please make sure to set Screen('Preference', 'SkipSyncTests', 0) for maximum accuracy and reliability.
+ex_2_2_localisation_mixed_ver1_1(1)
